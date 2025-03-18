@@ -31,4 +31,5 @@ def home():
     return "WhatsApp Bot is running!", 200
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    port = int(os.environ.get("PORT", 10000))  # שימוש בערך של `PORT` מ-Render
+    app.run(host="0.0.0.0", port=port)
