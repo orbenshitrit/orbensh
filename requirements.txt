@@ -1,7 +1,3 @@
 flask
 gunicorn
 requests
-pandas
-openai
-fpdf
-gtts
