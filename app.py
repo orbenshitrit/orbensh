@@ -31,7 +31,7 @@ def home():
     return "WhatsApp Bot is running!", 200
 
 if __name__ == "__main__":
-    from waitress import serve
-    port = int(os.environ.get("PORT", 10000))  # שימוש ב-PROCESS ENV
-    serve(app, host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 10000))  # שימוש בערך של PORT מ-Render
+    app.run(host="0.0.0.0", port=port)
+
 
